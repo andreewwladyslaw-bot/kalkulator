@@ -4,14 +4,17 @@ import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
 
 const isTauri = Boolean(process.env.TAURI_ENV_PLATFORM);
+const isIosBuild = process.env.IOS_NATIVE_BUILD === "1";
+
+const isNative = isTauri || isIosBuild;
 
 export default defineConfig({
-  base: isTauri ? "./" : "/kalkulator/",
+  base: isNative ? "./" : "/kalkulator/",
 
   plugins: [
     react(),
 
-    ...(!isTauri
+    ...(!isNative
       ? [
           VitePWA({
             registerType: "autoUpdate",

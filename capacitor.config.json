@@ -1,5 +1,5 @@
 {
-  "appId": "com.example.app",
-  "appName": "kalkulator",
+  "appId": "io.github.andreewwladyslawbot.kalkulator",
+  "appName": "Kalkulator React",
   "webDir": "dist"
 }
