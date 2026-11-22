@@ -1,0 +1,44 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="512"
+     height="512"
+     viewBox="0 0 512 512">
+
+  <rect width="512" height="512"
+        rx="110" fill="#202938"/>
+
+  <rect x="105" y="72"
+        width="302" height="368"
+        rx="44" fill="#344157"/>
+
+  <rect x="133" y="104"
+        width="246" height="100"
+        rx="18" fill="#101827"/>
+
+  <text x="351" y="174"
+        font-family="Arial"
+        font-size="65"
+        font-weight="bold"
+        fill="white"
+        text-anchor="end">123</text>
+
+  <rect x="133" y="231" width="65" height="65"
+        rx="13" fill="#64748b"/>
+  <rect x="223" y="231" width="65" height="65"
+        rx="13" fill="#64748b"/>
+  <rect x="313" y="231" width="65" height="65"
+        rx="13" fill="#315fb5"/>
+
+  <rect x="133" y="320" width="65" height="65"
+        rx="13" fill="#64748b"/>
+  <rect x="223" y="320" width="65" height="65"
+        rx="13" fill="#64748b"/>
+  <rect x="313" y="320" width="65" height="65"
+        rx="13" fill="#139d80"/>
+
+  <path d="M333 352 L344 363 L362 341"
+        fill="none" stroke="white"
+        stroke-width="8"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
