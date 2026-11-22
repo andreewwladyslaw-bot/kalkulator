@@ -38,6 +38,11 @@ jobs:
 
       - name: Zbuduj kalkulator
         run: npm run build
+      - name: Uruchom testy kalkulatora
+        run: npm run test
+
+      - name: Sprawdz kod
+        run: npm run lint
 
       - name: Skonfiguruj GitHub Pages
         uses: actions/configure-pages@v6
