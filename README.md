@@ -1,57 +1,16 @@
-# Kolorowy kalkulator Python
+# React + Vite
 
-Kalkulator w Pythonie z graficznym interfejsem Tkinter.
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-## Funkcje
-- Dodawanie, odejmowanie, mnożenie i dzielenie.
-- Kolorowe przyciski cyfr.
-- Przycisk **Dodatkowe funkcje ▼**, który otwiera panel naukowy.
-- Pierwiastek kwadratowy (√x), kwadrat (x²), sześcian (x³), odwrotność (1/x).
-- Sinus, cosinus i tangens **w stopniach**.
-- Liczba π, procenty, zmiana znaku i cofanie cyfr.
-- Obsługa klawiatury.
+Currently, two official plugins are available:
 
-## Uruchomienie
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-1. Zainstaluj Pythona na komputerze.
-2. Otwórz cały folder w Visual Studio Code.
-3. W terminalu uruchom:
+## React Compiler
 
-```powershell
-python kalkulator.py
-```
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-Na Windows, gdy `python` nie jest rozpoznawane, spróbuj:
+## Expanding the Oxlint configuration
 
-```powershell
-py kalkulator.py
-```
-
-Tkinter jest częścią standardowej instalacji Pythona w Windows.
-
-## Obsługa
-
-Kliknij **Dodatkowe funkcje ▼**, aby pokazać przyciski naukowe. Ponowne kliknięcie ukrywa panel. Sinus, cosinus i tangens używają stopni, np. `30 → sin → 0.5`.
-
-Procenty działają jako podzielenie bieżącej liczby przez 100 (np. `50 → % → 0.5`). Przy dzieleniu przez zero kalkulator wyświetla **Błąd**.
-
-## GitHub
-
-Po utworzeniu pustego repozytorium `Kalkulator-Python`:
-
-```bash
-git init
-git add .
-git commit -m "Dodano kolorowy kalkulator z funkcjami naukowymi"
-git branch -M main
-git remote add origin https://github.com/TWOJ_LOGIN/Kalkulator-Python.git
-git push -u origin main
-```
-
-Gdy repozytorium już istnieje i jest połączone z GitHubem, wystarczą:
-
-```bash
-git add .
-git commit -m "Dodano kolorowe przyciski i panel naukowy"
-git push
-```
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
